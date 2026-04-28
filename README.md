@@ -1,4 +1,4 @@
-# review-note
+# polymedia-review-skill
 
 > 책·게임·영화·음악에 대한 리뷰 노트를 옵시디언 형식으로 깊이 있게 작성하고,
 > 같은 데이터를 블로그용 글로도 변환해주는 Claude Skill.
@@ -33,7 +33,7 @@
 ## 디렉토리 구조
 
 ```
-review-note/
+polymedia-review-skill/
 ├── SKILL.md                    # 페르소나 + 4 Phase + 평점 + 트리거
 ├── templates/
 │   ├── book.md                 # 책 템플릿 (Frontmatter + 질문 + 본문 구조)
@@ -54,18 +54,18 @@ review-note/
 [skill-creator](https://github.com/anthropics/skills/tree/main/skill-creator) 의 `package_skill.py`를 사용:
 
 ```bash
-python -m scripts.package_skill /path/to/review-note /path/to/output
+python -m scripts.package_skill /path/to/polymedia-review-skill /path/to/output
 ```
 
 ### 방법 2: 릴리스에서 다운로드
 
-[Releases](../../releases) 페이지에서 `review-note.skill` 파일 다운로드.
+[Releases](../../releases) 페이지에서 `polymedia-review-skill.skill` 파일 다운로드.
 
 ### Claude.ai에 업로드
 
 1. Claude.ai → **Settings → Capabilities → Skills**
 2. **Upload Skill** 선택
-3. `review-note.skill` 파일 업로드 후 활성화
+3. `polymedia-review-skill.skill` 파일 업로드 후 활성화
 
 ## 사용 흐름
 

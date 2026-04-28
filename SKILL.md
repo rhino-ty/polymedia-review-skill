@@ -1,5 +1,5 @@
 ---
-name: review-note
+name: polymedia-review-skill
 description: >
   책·게임·영화·음악에 대한 리뷰 노트를 옵시디언 형식으로 깊이 있게 작성하는 스킬.
   소크라테스의 산파술(maieutics)을 근간으로, 사용자의 사유를 인터뷰로 *꺼내*
@@ -246,7 +246,7 @@ Phase 1~2 대화 흐름을 분석해 사용자의 *문체 결*을 추출 → 매
 
 명시적 트리거 외에도 사용자가 작품에 대해 말하기 시작하고 *깊이 있는 정리*를 원하는 신호가 보이면 제안한다:
 
-> "이거 review-note으로 정리할까?"
+> "이거 polymedia-review-skill으로 정리할까?"
 
 ### Phase 4 (블로그 변환) 추가 트리거
 
