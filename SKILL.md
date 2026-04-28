@@ -1,24 +1,53 @@
 ---
 name: polymedia-review-skill
 description: >
-  책·게임·영화·음악에 대한 리뷰 노트를 옵시디언 형식으로 깊이 있게 작성하는 스킬.
-  소크라테스의 산파술(maieutics)을 근간으로, 사용자의 사유를 인터뷰로 *꺼내*
-  4차원 루브릭(craft/narrative/impact/rewatch)으로 평점 매기고,
-  매체별 템플릿에 따라 마크다운 노트를 생성한다.
-  추가로 옵시디언 노트를 네이버 블로그·티스토리·벨로그 등 독자용 글로 변환하는
-  Phase 4 모드도 제공한다 (개인 톤 가이드 포함).
+  AI agent skill for writing deep review notes on books, games, movies, and
+  music in Obsidian format. Built on Socrates' maieutics (산파술) — instead of
+  giving the user critic-style answers, the skill *interviews* them to draw out
+  the thinking already inside, scores it on a 4-dimension rubric
+  (craft / narrative / impact / rewatch), and renders the result through
+  per-medium templates. A Phase 4 mode then converts the Obsidian note into
+  reader-facing blog posts (Naver Blog · Tistory · Velog) while preserving the
+  user's personal voice.
 
-  다음 상황에서 반드시 트리거한다:
-  (1) "리뷰 써줘" / "이 작품 정리하자" / "노트 만들자"
-  (2) "방금 다 봤어 / 다 읽었어 / 다 깼어 / 들었어" + 작품명
-  (3) "감상 정리" / "리뷰 노트" / "옵시디언에 정리"
-  (4) 책/게임/영화/음악 작품명 + 정리·평가 의도
-  (5) "이 작품 어땠는지 풀어보자"
-  (6) "블로그에 올리고 싶어" / "블로그용으로 변환" + 작품 (Phase 4)
+  ALWAYS trigger this skill when the user signals one of:
+  (1) "write a review for X" / "리뷰 써줘" / "[作品] レビュー" / "[作品] 评论"
+  (2) "just finished / watched / read / played / listened to" + work
+  (3) "let's organize this" / "감상 정리" / "노트로 만들자"
+  (4) Book / game / movie / music title + intent to evaluate or archive
+  (5) "let's unpack what I felt about this work"
+  (6) "convert this to a blog post" / "블로그용으로 변환" (Phase 4)
 
-  키워드: 리뷰, 노트, 감상, 정리, 평점, 별점, 작품, 옵시디언, Obsidian,
-  책, 영화, 게임, 음악, 앨범, 소설, 에세이, 산파, 산파술, maieutics,
-  블로그, 네이버 블로그, 티스토리, 벨로그
+  Triggers (multi-lingual):
+  EN: review, write a review, review note, obsidian note, just finished,
+      just watched, just read, just played, just listened, book review,
+      movie review, game review, album review, rate this, blog conversion,
+      maieutics, socratic interview
+  KO: 리뷰, 리뷰 써줘, 리뷰 노트, 노트, 감상, 감상 정리, 정리, 평점, 별점,
+      작품 정리, 옵시디언, 다 봤어, 다 읽었어, 다 깼어, 들었어,
+      산파, 산파술, 블로그용, 네이버 블로그, 티스토리, 벨로그
+  JA: レビュー, レビューを書いて, 感想, 感想ノート, ノート, 評価, 採点,
+      観終わった, 読み終わった, クリアした, 聴いた, Obsidianに整理,
+      ブログ用, 産婆術
+  ZH: 评论, 写评论, 笔记, 感想, 整理, 评分, 打分, 看完了, 读完了,
+      通关了, 听完了, 博客发布, 助产术
+  ES: reseña, escribir reseña, nota, impresión, calificación, puntuación,
+      acabo de ver, acabo de leer, acabo de jugar, acabo de escuchar,
+      conversión a blog, mayéutica
+  FR: critique, écrire une critique, note, impression, évaluation, notation,
+      je viens de voir, je viens de lire, je viens de jouer,
+      je viens d'écouter, conversion en blog, maïeutique
+  DE: Rezension, Rezension schreiben, Notiz, Eindruck, Bewertung, Benotung,
+      gerade gesehen, gerade gelesen, gerade gespielt, gerade gehört,
+      Blog-Konvertierung, Mäeutik
+  IT: recensione, scrivere una recensione, nota, impressione, valutazione,
+      voto, ho appena visto, ho appena letto, ho appena giocato,
+      ho appena ascoltato, conversione in blog, maieutica
+
+  Do NOT trigger for: simple star-rating requests with no reflection,
+  academic / scholarly literary criticism, plain plot-summary lookups,
+  mass review generation for SEO, spoiler-heavy synopses, or works the user
+  has not yet experienced.
 ---
 
 # Review Note — 산파술(Maieutics) 인터뷰
