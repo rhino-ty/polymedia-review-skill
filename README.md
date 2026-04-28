@@ -2,7 +2,7 @@
 
 > AI agent skill for writing deep review notes on books, games, movies, and music
 > in Obsidian format — and then converting them into blog-ready posts. Built on
-> Socrates' **maieutics (산파술)**: the skill interviews you to draw out the thinking
+> Socrates' **maieutic**s (**산파술**): the skill interviews you to draw out the thinking
 > already inside, instead of dumping critic-style answers on you.
 
 [![Made with](https://img.shields.io/badge/Made%20with-Claude%20Skills-blueviolet)](https://docs.claude.com)
@@ -13,14 +13,14 @@
 
 ## 무엇을 하는 스킬인가
 
-작품을 보고 그냥 "좋았어"에서 끝내지 않고, **사유를 끌어내는 인터뷰**를 통해 옵시디언에 깊이 있는 리뷰 노트를 작성한다. 노트가 완성되면 같은 데이터를 톤만 바꿔 **블로그용 글로 변환**도 해준다.
+작품을 보고 그냥 '좋았어'에서 끝내지 않고, **사유를 끌어내는 인터뷰**를 통해 옵시디언에 깊이 있는 리뷰 노트를 작성한다. 노트가 완성되면 같은 데이터를 톤만 바꿔 **블로그용 글로 변환**도 해준다.
 
 핵심 철학은 한 줄로:
 
 > Claude는 **산파**다. 비평가가 아니다.
 > 사용자 안에 이미 있는 사유를 *언어화*하도록 돕는 사람.
 
-이 페르소나는 소크라테스의 **산파술(maieutics, μαιευτική)**에서 가져왔다. 소크라테스는 자기 어머니의 직업(산파)을 빌려 자신의 대화법을 산파술이라 불렀다. 산파가 아이를 *낳지는* 않듯, 자신은 답을 *주지* 않는다. 다만 상대 안에 이미 있는 답이 *나올 수 있도록* 도울 뿐이다.
+이 페르소나는 소크라테스의 **산파술**(**maieutics**, μαιευτική)에서 가져왔다. 소크라테스는 자기 어머니의 직업(산파)을 빌려 자신의 대화법을 산파술이라 불렀다. 산파가 아이를 *낳지는* 않듯, 자신은 답을 *주지* 않는다. 다만 상대 안에 이미 있는 답이 *나올 수 있도록* 도울 뿐이다.
 
 작품에 대한 일반적인 해석이나 평론을 *던지는* 것이 아니라, 사용자가 자기 안에 있는 생각을 풀어내도록 *질문만* 던진다.
 
@@ -64,7 +64,7 @@ npx skills add rhino-ty/polymedia-review-skill
 ## 사용 흐름
 
 ```
-"[작품명] 리뷰 써줘" 또는 작품 정리 의도
+'[작품명] 리뷰 써줘' 또는 작품 정리 의도
   ↓
 Phase 0: 작품 캘리브레이션 (매체 + 작품 결 파악)
   ↓
@@ -75,17 +75,17 @@ Phase 2: 대화형 파고들기 (왜? + 감정 어휘 거들기)
 Phase 3: 노트 생성 — 모드 A (구조+키워드) or 모드 B (문체 모방)
   ↓
 [옵션] Phase 4: 블로그 변환
-  "블로그용으로도 변환할까?"
+  '블로그용으로도 변환할까?'
   ↓ YES
   후킹 제목 3안 → 사용자 톤 재작성 → 이미지 자리 표시
 ```
 
 ## 트리거 발화 예시
 
-- "[작품명] 리뷰 써줘"
-- "방금 [작품] 다 봤어, 정리하자"
-- "[작품] 옵시디언에 정리하고 싶어"
-- "감상 정리"
+- '[작품명] 리뷰 써줘'
+- '방금 [작품] 다 봤어, 정리하자'
+- '[작품] 옵시디언에 정리하고 싶어'
+- '감상 정리'
 - 책/게임/영화/음악 작품명 + 평가·정리 의도
 
 ### Trigger Keywords
