@@ -51,29 +51,15 @@ polymedia-review-skill/
 
 ## 설치
 
-### 방법 1: `npx skills add` (권장)
-
 ```bash
 npx skills add rhino-ty/polymedia-review-skill
 ```
 
-### 방법 2: 직접 패키징
+[vercel-labs/skills](https://github.com/vercel-labs/skills) CLI가 GitHub 레포에서 직접 SKILL.md를 가져와 Claude Code, Cursor, Codex 등 지원 에이전트에 설치한다. 옵션:
 
-[skill-creator](https://github.com/anthropics/skills/tree/main/skill-creator) 의 `package_skill.py`를 사용:
-
-```bash
-python -m scripts.package_skill /path/to/polymedia-review-skill /path/to/output
-```
-
-### 방법 3: 릴리스에서 다운로드
-
-[Releases](../../releases) 페이지에서 `polymedia-review-skill.skill` 파일 다운로드.
-
-### Claude.ai에 업로드
-
-1. Claude.ai → **Settings → Capabilities → Skills**
-2. **Upload Skill** 선택
-3. `polymedia-review-skill.skill` 파일 업로드 후 활성화
+- `-g` / `--global` — 사용자 단위로 전역 설치 (모든 프로젝트에서 사용)
+- `-a <agent>` — 특정 에이전트에만 설치 (예: `claude-code`)
+- `--all` — 자동 확인 + 모든 에이전트에 설치
 
 ## 사용 흐름
 
