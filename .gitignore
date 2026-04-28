@@ -22,3 +22,7 @@ venv/
 *.skill
 dist/
 build/
+
+# bkit auto-generated artifacts
+docs/.bkit-memory.json
+docs/.pdca-status.json
